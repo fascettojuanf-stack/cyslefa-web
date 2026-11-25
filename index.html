@@ -197,7 +197,7 @@ footer .wrap{display:flex;flex-direction:column;gap:4px}
     <div class="client"><b>Estadio Único de La Plata</b><span>Reforma de 60 palcos y pasillos interiores</span></div>
     <div class="client"><b>Ministerio de Salud</b><span>Provincia de Buenos Aires · 6 hospitales y centros de salud</span></div>
     <div class="client"><b>Cámara de Diputados de la Nación</b><span>Reacondicionamiento de sala</span></div>
-    <div class="client"><b>Municipalidad de La Plata</b><span>Recambio de veredas</span></div>
+    <div class="client"><b>Municipalidad de La Plata</b><span>Veredas de avenida 7, de 44 a 60</span></div>
     <div class="client"><b>Municipalidad de General Pueyrredón</b><span>6 escuelas y jardines</span></div>
     <div class="client"><b>Emapi S.A.</b><span>Pavimentos industriales y depósitos</span></div>
     <div class="client"><b>DEFILAP</b><span>Depósito Fiscal La Plata</span></div>
@@ -312,6 +312,7 @@ Object.assign(IMG,{est1:'img/estadio-1.jpg',est2:'img/estadio-2.jpg',est3:'img/e
 for(let n=1;n<=10;n++)IMG['sm'+n]='img/san-martin-'+n+'.jpg';
 for(let n=1;n<=5;n++)IMG['df'+n]='img/defilap-'+n+'.jpg';
 for(let n=1;n<=13;n++)IMG['mdp'+n]='img/mdp-'+n+'.jpg';
+for(let n=1;n<=12;n++)IMG['ver'+n]='img/veredas-'+n+'.jpg';
 const STATIC=[
  {s:'publico',t:'Estadio Único de La Plata «Diego Armando Maradona»',i:['est1','est2','est3','est4'],x:'Reforma de 60 palcos y de todos los pasillos interiores del estadio.'},
  {s:'publico',t:'Hospital San Martín de La Plata',i:['sm1','sm2','sm3','sm4','sm5','sm6','sm7','sm8','sm9','sm10'],x:'Estacionamiento de 6.000 m²: movimiento de suelo, compactación con pata de cabra, imprimación de brea asfáltica con regador en caliente y colocación de fresado recuperado provisto por Vialidad Nacional. Torres de iluminación pública con tendido eléctrico subterráneo e impermeabilización de techos del resonador con membrana geotextil de 48 kg.'},
@@ -321,7 +322,7 @@ const STATIC=[
  {s:'publico',t:'Hospital Larraín de Berisso',x:'Reubicación, refuncionalización y restauración del vacunatorio. Modificación de oficinas, impermeabilización de una losa con sistema Rubber Fields, canaletas y reemplazo de zinguería.'},
  {s:'publico',t:'UPA 17 de Quilmes',x:'Puesta en valor y recambio de todos los pisos fenólicos con sus refuerzos de hierro, y de los pisos vinílicos de 6 mm.'},
  {s:'publico',t:'Honorable Cámara de Diputados de la Nación',i:['dip1','dip2'],x:'Reacondicionamiento de una sala: cambio de pisos, techos, cortinas, sistemas de climatización e instalaciones eléctricas.'},
- {s:'publico',t:'Municipalidad de La Plata',x:'Recambio de veredas en calle 7 entre 44 y 60 (2023), con rampas para personas con discapacidad en las esquinas y dársenas de carga y descarga.'},
+ {s:'publico',t:'Municipalidad de La Plata',i:['ver1','ver2','ver3','ver4','ver5','ver6','ver7','ver8','ver9','ver10','ver11','ver12'],x:'Recambio total de las veredas de la avenida 7, de ambos lados, entre calles 44 y 60: desmonte del solado existente, ejecución de carpeta y colocación de baldosas con cemento blanco. Rampas para personas con discapacidad en las esquinas, solado podotáctil y dársenas de carga y descarga.'},
  {s:'publico',t:'Municipalidad de General Pueyrredón',i:['mdp7','mdp8','mdp1','mdp2','mdp3','mdp4','mdp5','mdp6','mdp9','mdp10','mdp11','mdp12','mdp13'],x:'Refacciones y ampliaciones en 6 escuelas y jardines municipales.'},
  {s:'privado',t:'Viviendas multifamiliares en Gonnet',i:['gonnet'],x:'1.400 m² ejecutados en un plazo de 2 años, con provisión de mano de obra calificada, equipamiento y herramientas.'},
  {s:'privado',t:'Triplex',x:'Construcción de viviendas tipo triplex.'},
@@ -332,7 +333,7 @@ const PLACE={
  'Estadio Único de La Plata «Diego Armando Maradona»':'La Plata',
  'Hospital San Martín de La Plata':'La Plata · 2021-2022','Hospital San Juan de Dios de La Plata':'La Plata','Hospital Rossi de La Plata':'La Plata',
  'HIGA San Roque de Gonnet':'Manuel B. Gonnet','Hospital Larraín de Berisso':'Berisso','UPA 17 de Quilmes':'Quilmes',
- 'Honorable Cámara de Diputados de la Nación':'Ciudad de Buenos Aires','Municipalidad de La Plata':'La Plata · 2023',
+ 'Honorable Cámara de Diputados de la Nación':'Ciudad de Buenos Aires','Municipalidad de La Plata':'La Plata · 2022-2023',
  'Municipalidad de General Pueyrredón':'Mar del Plata · 2022','Viviendas multifamiliares en Gonnet':'Manuel B. Gonnet',
  'Emapi S.A.':'La Plata','DEFILAP (Depósito Fiscal La Plata)':'Puerto de Berisso'
 };
