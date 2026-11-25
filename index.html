@@ -171,7 +171,7 @@ footer .wrap{display:flex;flex-direction:column;gap:4px}
   <div class="cta"><a class="btn" href="#obras">Ver nuestras obras</a><a class="btn ghost" href="#contacto">Pedir presupuesto</a></div>
 </div></div>
 <div class="strip">
-  <div><b>14</b><span>obras destacadas</span></div>
+  <div><b>15</b><span>obras destacadas</span></div>
   <div><b>10</b><span>obras públicas para el Estado</span></div>
   <div><b>+8.000 m²</b><span>ejecutados en obras destacadas</span></div>
   <div><b>N.º 107287</b><span>proveedor de la Provincia de Buenos Aires</span></div>
@@ -313,29 +313,33 @@ for(let n=1;n<=10;n++)IMG['sm'+n]='img/san-martin-'+n+'.jpg';
 for(let n=1;n<=5;n++)IMG['df'+n]='img/defilap-'+n+'.jpg';
 for(let n=1;n<=13;n++)IMG['mdp'+n]='img/mdp-'+n+'.jpg';
 for(let n=1;n<=12;n++)IMG['ver'+n]='img/veredas-'+n+'.jpg';
+for(let n=1;n<=14;n++)IMG['sr'+n]='img/sanroque-'+n+'.jpg';
+for(let n=1;n<=5;n++)IMG['hcdn'+n]='img/diputados-'+n+'.jpg';
+Object.assign(IMG,{emapi2:'img/emapi-1.jpg',loc1:'img/local12-1.jpg'});
 const STATIC=[
  {s:'publico',t:'Estadio Único de La Plata «Diego Armando Maradona»',i:['est1','est2','est3','est4'],x:'Reforma de 60 palcos y de todos los pasillos interiores del estadio.'},
+ {s:'publico',t:'HIGA San Roque de Gonnet',i:['sr1','sr2','sr3','sr4','sr5','sr6','sr7','sr8','sr9','sr10','sr11','sr12','sr13','sr14','higa'],x:'Patio central puesto en valor e inaugurado el 2 de abril de 2026: pisos de hormigón elaborado, bancos, cámaras, pintura general y parquización. Guardia: puesta en valor de shock room 1 y 2 y sala de observación. Gimnasio de rehabilitación de 150 m², con platea de hormigón y guía con elevador eléctrico. Antes: intervención integral en quirófanos, reubicación del área administrativa de 600 m² con piso de hormigón, cielo raso LED, instalación eléctrica y climatización; veredas, impermeabilización de techos y renovación de tableros eléctricos y tanques de agua.'},
  {s:'publico',t:'Hospital San Martín de La Plata',i:['sm1','sm2','sm3','sm4','sm5','sm6','sm7','sm8','sm9','sm10'],x:'Estacionamiento de 6.000 m²: movimiento de suelo, compactación con pata de cabra, imprimación de brea asfáltica con regador en caliente y colocación de fresado recuperado provisto por Vialidad Nacional. Torres de iluminación pública con tendido eléctrico subterráneo e impermeabilización de techos del resonador con membrana geotextil de 48 kg.'},
  {s:'publico',t:'Hospital San Juan de Dios de La Plata',x:'Lavadero industrial, remodelación del área de dermatología y de baños públicos en planta baja con accesibilidad para personas con discapacidad, e impermeabilización de terrazas y techos.'},
  {s:'publico',t:'Hospital Rossi de La Plata',i:['rossi'],x:'Puesta en valor de todas las habitaciones del tercer piso y del jardín de infantes para los hijos de los empleados, contiguo a la entrada de la guardia.'},
- {s:'publico',t:'HIGA San Roque de Gonnet',i:['higa'],x:'Intervención integral en quirófanos (albañilería, plomería y pintura). Reubicación del área administrativa de 600 m² con piso de hormigón, cielo raso con paneles LED, nueva instalación eléctrica y climatización. Veredas, gimnasio de rehabilitación de 150 m², impermeabilización de techos y renovación de tableros eléctricos y tanques de agua.'},
  {s:'publico',t:'Hospital Larraín de Berisso',x:'Reubicación, refuncionalización y restauración del vacunatorio. Modificación de oficinas, impermeabilización de una losa con sistema Rubber Fields, canaletas y reemplazo de zinguería.'},
  {s:'publico',t:'UPA 17 de Quilmes',x:'Puesta en valor y recambio de todos los pisos fenólicos con sus refuerzos de hierro, y de los pisos vinílicos de 6 mm.'},
- {s:'publico',t:'Honorable Cámara de Diputados de la Nación',i:['dip1','dip2'],x:'Reacondicionamiento de una sala: cambio de pisos, techos, cortinas, sistemas de climatización e instalaciones eléctricas.'},
- {s:'publico',t:'Municipalidad de La Plata',i:['ver1','ver2','ver3','ver4','ver5','ver6','ver7','ver8','ver9','ver10','ver11','ver12'],x:'Recambio total de las veredas de la avenida 7, de ambos lados, entre calles 44 y 60: desmonte del solado existente, ejecución de carpeta y colocación de baldosas con cemento blanco. Rampas para personas con discapacidad en las esquinas, solado podotáctil y dársenas de carga y descarga.'},
+ {s:'publico',t:'Honorable Cámara de Diputados de la Nación',i:['hcdn1','hcdn2','hcdn3','hcdn4','hcdn5','dip1','dip2'],x:'Puesta en valor de la sala de comisiones del edificio Anexo C: pisos, techos, cortinas, revestimientos en muros, puertas, instalación y proyecto lumínico, climatización, instalaciones eléctricas, pintura y mobiliario.'},
+ {s:'publico',t:'Municipalidad de La Plata',i:['ver1','ver2','ver3','ver4','ver5','ver6','ver7','ver8','ver9','ver10','ver11','ver12'],x:'Recambio total de las veredas de la avenida 7, de ambos lados, entre calles 44 y 60: desmonte del solado existente, ejecución de carpeta y colocación de baldosas de 60 x 60 de cemento blanco y podotáctiles. Rampas para personas con discapacidad en las esquinas, cordones y dársenas de carga y descarga. Duración: 5 meses.'},
  {s:'publico',t:'Municipalidad de General Pueyrredón',i:['mdp7','mdp8','mdp1','mdp2','mdp3','mdp4','mdp5','mdp6','mdp9','mdp10','mdp11','mdp12','mdp13'],x:'Refacciones y ampliaciones en 6 escuelas y jardines municipales.'},
+ {s:'privado',t:'Local comercial en calle 12',i:['loc1'],x:'450 m² cubiertos y 150 m² descubiertos: demolición, estructura y losetas de hormigón armado, piso de hormigón fibrado llaneado, techo de chapa con perfilería de zinc y zinguería. Oficinas acustizadas con baño y cocina; vestuarios, baños y comedor en planta alta.'},
  {s:'privado',t:'Viviendas multifamiliares en Gonnet',i:['gonnet'],x:'1.400 m² ejecutados en un plazo de 2 años, con provisión de mano de obra calificada, equipamiento y herramientas.'},
  {s:'privado',t:'Triplex',x:'Construcción de viviendas tipo triplex.'},
- {s:'privado',t:'Emapi S.A.',i:['emapi'],x:'Pavimentos de hormigón armado para alto tránsito de cargas pesadas en su planta de La Plata, y recambio de pluviales, techos de chapa y racks en distintos depósitos.'},
+ {s:'privado',t:'Emapi S.A.',i:['emapi','emapi2'],x:'Pavimentos de hormigón armado para alto tránsito de cargas pesadas en su planta de La Plata, platea de hormigón elaborado H30 con microfibra para pisos industriales, y recambio de pluviales, techos de chapa y racks en distintos depósitos.'},
  {s:'privado',t:'DEFILAP (Depósito Fiscal La Plata)',i:['df1','defilap','df2','df3','df4','df5'],x:'Remoción del piso existente y reemplazo por pavimento de hormigón elaborado. Proyecto de Vialidad Nacional, ejecutado en tiempo y forma.'}
 ].map(o=>({sector:o.s,title:o.t,text:o.x,imgs:(o.i||[]).map(k=>IMG[k]),own:false}));
 const PLACE={
  'Estadio Único de La Plata «Diego Armando Maradona»':'La Plata',
  'Hospital San Martín de La Plata':'La Plata · 2021-2022','Hospital San Juan de Dios de La Plata':'La Plata','Hospital Rossi de La Plata':'La Plata',
- 'HIGA San Roque de Gonnet':'Manuel B. Gonnet','Hospital Larraín de Berisso':'Berisso','UPA 17 de Quilmes':'Quilmes',
- 'Honorable Cámara de Diputados de la Nación':'Ciudad de Buenos Aires','Municipalidad de La Plata':'La Plata · 2022-2023',
+ 'HIGA San Roque de Gonnet':'Manuel B. Gonnet · hasta 2026','Hospital Larraín de Berisso':'Berisso','UPA 17 de Quilmes':'Quilmes',
+ 'Honorable Cámara de Diputados de la Nación':'Ciudad de Buenos Aires · 2023','Municipalidad de La Plata':'La Plata · 2022-2023',
  'Municipalidad de General Pueyrredón':'Mar del Plata · 2022','Viviendas multifamiliares en Gonnet':'Manuel B. Gonnet',
- 'Emapi S.A.':'La Plata','DEFILAP (Depósito Fiscal La Plata)':'Puerto de Berisso'
+ 'Emapi S.A.':'La Plata','Local comercial en calle 12':'La Plata · 2026','DEFILAP (Depósito Fiscal La Plata)':'Puerto de Berisso'
 };
 STATIC.forEach(o=>{o.place=PLACE[o.title]||''});
 
