@@ -311,6 +311,7 @@ const IMG={"dip1": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGB
 Object.assign(IMG,{est1:'img/estadio-1.jpg',est2:'img/estadio-2.jpg',est3:'img/estadio-3.jpg',est4:'img/estadio-4.jpg'});
 for(let n=1;n<=10;n++)IMG['sm'+n]='img/san-martin-'+n+'.jpg';
 for(let n=1;n<=5;n++)IMG['df'+n]='img/defilap-'+n+'.jpg';
+for(let n=1;n<=6;n++)IMG['mdp'+n]='img/mdp-'+n+'.jpg';
 const STATIC=[
  {s:'publico',t:'Estadio Único de La Plata «Diego Armando Maradona»',i:['est1','est2','est3','est4'],x:'Reforma de 60 palcos y de todos los pasillos interiores del estadio.'},
  {s:'publico',t:'Hospital San Martín de La Plata',i:['sm1','sm2','sm3','sm4','sm5','sm6','sm7','sm8','sm9','sm10'],x:'Estacionamiento de 6.000 m²: movimiento de suelo, compactación con pata de cabra, imprimación de brea asfáltica con regador en caliente y colocación de fresado recuperado provisto por Vialidad Nacional. Torres de iluminación pública con tendido eléctrico subterráneo e impermeabilización de techos del resonador con membrana geotextil de 48 kg.'},
@@ -321,7 +322,7 @@ const STATIC=[
  {s:'publico',t:'UPA 17 de Quilmes',x:'Puesta en valor y recambio de todos los pisos fenólicos con sus refuerzos de hierro, y de los pisos vinílicos de 6 mm.'},
  {s:'publico',t:'Honorable Cámara de Diputados de la Nación',i:['dip1','dip2'],x:'Reacondicionamiento de una sala: cambio de pisos, techos, cortinas, sistemas de climatización e instalaciones eléctricas.'},
  {s:'publico',t:'Municipalidad de La Plata',x:'Recambio de veredas en calle 7 entre 44 y 60 (2023), con rampas para personas con discapacidad en las esquinas y dársenas de carga y descarga.'},
- {s:'publico',t:'Municipalidad de General Pueyrredón',x:'Refacciones y ampliaciones en 6 escuelas y jardines municipales.'},
+ {s:'publico',t:'Municipalidad de General Pueyrredón',i:['mdp1','mdp2','mdp3','mdp4','mdp5','mdp6'],x:'Refacciones y ampliaciones en 6 escuelas y jardines municipales.'},
  {s:'privado',t:'Viviendas multifamiliares en Gonnet',i:['gonnet'],x:'1.400 m² ejecutados en un plazo de 2 años, con provisión de mano de obra calificada, equipamiento y herramientas.'},
  {s:'privado',t:'Triplex',x:'Construcción de viviendas tipo triplex.'},
  {s:'privado',t:'Puerto de Berisso',x:'Obras realizadas en el puerto de Berisso.'},
@@ -333,7 +334,7 @@ const PLACE={
  'Hospital San Martín de La Plata':'La Plata · 2021-2022','Hospital San Juan de Dios de La Plata':'La Plata','Hospital Rossi de La Plata':'La Plata',
  'HIGA San Roque de Gonnet':'Manuel B. Gonnet','Hospital Larraín de Berisso':'Berisso','UPA 17 de Quilmes':'Quilmes',
  'Honorable Cámara de Diputados de la Nación':'Ciudad de Buenos Aires','Municipalidad de La Plata':'La Plata · 2023',
- 'Municipalidad de General Pueyrredón':'Mar del Plata','Viviendas multifamiliares en Gonnet':'Manuel B. Gonnet',
+ 'Municipalidad de General Pueyrredón':'Mar del Plata · 2022','Viviendas multifamiliares en Gonnet':'Manuel B. Gonnet',
  'Puerto de Berisso':'Berisso','Emapi S.A.':'La Plata','DEFILAP (Depósito Fiscal La Plata)':'Puerto de Berisso'
 };
 STATIC.forEach(o=>{o.place=PLACE[o.title]||''});
