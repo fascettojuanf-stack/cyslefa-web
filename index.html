@@ -152,6 +152,18 @@ footer .wrap{display:flex;flex-direction:column;gap:4px}
 .bx:hover,.bnav:hover{background:rgba(255,255,255,.26)}
 .box-ov.single .bnav{visibility:hidden}
 @media(max-width:600px){.bnav{position:absolute;bottom:18px}#box-p{left:calc(50% - 56px)}#box-n{right:calc(50% - 56px)}.box-ov{padding-bottom:76px}.box-ov img{max-height:calc(100vh - 170px)}}
+/* Novedades */
+.news{display:grid;gap:14px;grid-template-columns:repeat(2,1fr);margin-top:22px}
+@media(min-width:900px){.news{grid-template-columns:repeat(4,1fr)}}
+.post{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;text-decoration:none;color:inherit}
+.post:hover{border-color:var(--orange)}
+.post img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:var(--paper)}
+.post div{padding:10px 12px 12px;display:flex;flex-direction:column;gap:3px}
+.post time{font-size:12.5px;color:var(--mut);font-weight:600}
+.post b{font-size:15px;line-height:1.3}
+.ig-cta{margin-top:20px}
+.btn.dark{background:var(--ink)}
+.btn.dark:hover{background:#000}
 /* WhatsApp flotante */
 .wa{position:fixed;right:16px;bottom:16px;z-index:30;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.25)}
 .wa:hover{transform:scale(1.06)}
@@ -215,7 +227,20 @@ footer .wrap{display:flex;flex-direction:column;gap:4px}
   <div class="grid" id="grid"></div>
 </div></section>
 
-<section id="zona"><div class="wrap">
+<section id="novedades"><div class="wrap">
+  <div class="eyebrow">Novedades</div>
+  <h2>Lo último en obra</h2>
+  <p class="lead">Publicamos el avance de nuestras obras en Instagram.</p>
+  <div class="news">
+    <a class="post" href="https://www.instagram.com/p/DYpD0GdB_90/" target="_blank" rel="noopener"><img src="img/emapi-1.jpg" alt="Platea de hormigón en planta de Emapi" loading="lazy"><div><time datetime="2026-05-22">Mayo 2026</time><b>Platea de hormigón H30 con microfibra en planta de Emapi S.A.</b></div></a>
+    <a class="post" href="https://www.instagram.com/p/DXSJeISic34/" target="_blank" rel="noopener"><img src="img/sanroque-2.jpg" alt="Guardia del HIGA San Roque" loading="lazy"><div><time datetime="2026-04-18">Abril 2026</time><b>Puesta en valor de la guardia del HIGA San Roque</b></div></a>
+    <a class="post" href="https://www.instagram.com/p/DW38LdLDXVe/" target="_blank" rel="noopener"><img src="img/local12-1.jpg" alt="Local comercial en calle 12" loading="lazy"><div><time datetime="2026-04-08">Abril 2026</time><b>Local comercial en calle 12, La Plata</b></div></a>
+    <a class="post" href="https://www.instagram.com/p/DWkE1ASGUZl/" target="_blank" rel="noopener"><img src="img/sanroque-1.jpg" alt="Patio del HIGA San Roque" loading="lazy"><div><time datetime="2026-03-31">Marzo 2026</time><b>Inauguración del patio del HIGA San Roque</b></div></a>
+  </div>
+  <div class="ig-cta"><a class="btn dark" href="https://www.instagram.com/cyslefa_srl" target="_blank" rel="noopener">Seguinos en Instagram @cyslefa_srl</a></div>
+</div></section>
+
+<section class="alt" id="zona"><div class="wrap">
   <div class="eyebrow">Dónde trabajamos</div>
   <h2>Base en La Plata, obras en toda la provincia</h2>
   <p class="lead">Estamos en La Plata y trabajamos en el Gran La Plata, el Conurbano, la Costa Atlántica y la Ciudad de Buenos Aires.</p>
@@ -296,7 +321,7 @@ footer .wrap{display:flex;flex-direction:column;gap:4px}
 </div></section>
 <footer><div class="wrap">
   <span>CYSLEFA S.R.L. · Construcciones y Servicios · La Plata, Buenos Aires</span>
-  <span>CUIT 33-71694524-9 · Desde 2020</span>
+  <span>CUIT 33-71694524-9 · Desde 2020 · <a href="https://www.instagram.com/cyslefa_srl" target="_blank" rel="noopener">Instagram @cyslefa_srl</a></span>
 </div></footer>
 <div class="box-ov" id="box" hidden role="dialog" aria-modal="true" aria-label="Fotos de la obra">
   <button type="button" class="bx" id="box-x" aria-label="Cerrar">✕</button>
