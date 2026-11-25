@@ -171,7 +171,7 @@ footer .wrap{display:flex;flex-direction:column;gap:4px}
   <div class="cta"><a class="btn" href="#obras">Ver nuestras obras</a><a class="btn ghost" href="#contacto">Pedir presupuesto</a></div>
 </div></div>
 <div class="strip">
-  <div><b>15</b><span>obras destacadas</span></div>
+  <div><b>14</b><span>obras destacadas</span></div>
   <div><b>10</b><span>obras públicas para el Estado</span></div>
   <div><b>+8.000 m²</b><span>ejecutados en obras destacadas</span></div>
   <div><b>N.º 107287</b><span>proveedor de la Provincia de Buenos Aires</span></div>
@@ -325,7 +325,6 @@ const STATIC=[
  {s:'publico',t:'Municipalidad de General Pueyrredón',i:['mdp7','mdp8','mdp1','mdp2','mdp3','mdp4','mdp5','mdp6','mdp9','mdp10','mdp11','mdp12','mdp13'],x:'Refacciones y ampliaciones en 6 escuelas y jardines municipales.'},
  {s:'privado',t:'Viviendas multifamiliares en Gonnet',i:['gonnet'],x:'1.400 m² ejecutados en un plazo de 2 años, con provisión de mano de obra calificada, equipamiento y herramientas.'},
  {s:'privado',t:'Triplex',x:'Construcción de viviendas tipo triplex.'},
- {s:'privado',t:'Puerto de Berisso',x:'Obras realizadas en el puerto de Berisso.'},
  {s:'privado',t:'Emapi S.A.',i:['emapi'],x:'Pavimentos de hormigón armado para alto tránsito de cargas pesadas en su planta de La Plata, y recambio de pluviales, techos de chapa y racks en distintos depósitos.'},
  {s:'privado',t:'DEFILAP (Depósito Fiscal La Plata)',i:['df1','defilap','df2','df3','df4','df5'],x:'Remoción del piso existente y reemplazo por pavimento de hormigón elaborado. Proyecto de Vialidad Nacional, ejecutado en tiempo y forma.'}
 ].map(o=>({sector:o.s,title:o.t,text:o.x,imgs:(o.i||[]).map(k=>IMG[k]),own:false}));
@@ -335,7 +334,7 @@ const PLACE={
  'HIGA San Roque de Gonnet':'Manuel B. Gonnet','Hospital Larraín de Berisso':'Berisso','UPA 17 de Quilmes':'Quilmes',
  'Honorable Cámara de Diputados de la Nación':'Ciudad de Buenos Aires','Municipalidad de La Plata':'La Plata · 2023',
  'Municipalidad de General Pueyrredón':'Mar del Plata · 2022','Viviendas multifamiliares en Gonnet':'Manuel B. Gonnet',
- 'Puerto de Berisso':'Berisso','Emapi S.A.':'La Plata','DEFILAP (Depósito Fiscal La Plata)':'Puerto de Berisso'
+ 'Emapi S.A.':'La Plata','DEFILAP (Depósito Fiscal La Plata)':'Puerto de Berisso'
 };
 STATIC.forEach(o=>{o.place=PLACE[o.title]||''});
 
